@@ -1,0 +1,45 @@
+body {
+    background-color: aqua;
+    font-family: Roboto, sans-serif;
+}
+
+main {
+    margin: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    gap: 10px;
+    justify-items: stretch;
+    align-items: stretch;;
+}
+
+.grid-item {
+    background-color: peachpuff;
+    color: orange;
+}
+
+.card {
+    transition: all 1s linear;
+    transform-style: preserve-3d;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.front, .back {
+    display: flex;
+    backface-visibility: hidden;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
